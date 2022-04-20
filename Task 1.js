@@ -1,17 +1,6 @@
 function reverseString(str) {
-    /*
-    1. Buat variabel currentString dan newString
-    currentString menampung nilai dari parameter
-    newString adalah string kosong yang menampung nilai baru
-     */
     let currentString = str.toLowerCase();
     let newString = '';
-    /*
-     2. lakukan perulangan secara decrement atau penurunan (--)
-     nilai awal perulangan (let i) adalah panjang currentString dikurangi 1 yaitu 4
-     jika nilai i >= 0 maka jalankan kode yang ada di dalam perulangan
-     jika sudah selesai, lakukan decrement atau nilai i dikurangi 1 yaitu 4 - 1: 3
-      */
     for (let i = currentString.length - 1; i >= 0; i--) {
         newString = newString + currentString[i];
     }
@@ -22,6 +11,43 @@ function reverseString(str) {
 }
 console.log(reverseString('malam'));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    1. Buat variabel currentString dan newString
+    currentString menampung nilai dari parameter
+    newString adalah string kosong yang menampung nilai baru
+     */
+    
+/*
+     2. lakukan perulangan secara decrement atau penurunan (--)
+     nilai awal perulangan (let i) adalah panjang currentString dikurangi 1 yaitu 4
+     jika nilai i >= 0 maka jalankan kode yang ada di dalam perulangan
+     jika sudah selesai, lakukan decrement atau nilai i dikurangi 1 yaitu 4 - 1: 3
+      */
+    
 
 /*
 iterasi pertama: ambil index ke 4 currentString lalu digabung dan disimpan ke newString

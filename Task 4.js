@@ -1,4 +1,4 @@
-const deretAngka = (angka) => {
+const divideAndSort = (angka) => {
     if(typeof angka !== "number"){
         return "Data harus bertipe number";
     }
@@ -7,6 +7,6 @@ const deretAngka = (angka) => {
     for (let i = 0; i <= arrNumber.length -1; i++){
         arrNumber2 += arrNumber[i].split("").sort().join("")
     }
-    return arrNumber
+    return parseInt(arrNumber2)
 }
-console.log(deretAngka, Number((78907850524)));
+console.log(divideAndSort(5956560159466056));
