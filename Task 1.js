@@ -1,4 +1,4 @@
-function reverseString(str) {
+function deteksiPalindrom(str) {
     let currentString = str.toLowerCase();
     let newString = '';
     for (let i = currentString.length - 1; i >= 0; i--) {
@@ -9,7 +9,9 @@ function reverseString(str) {
     }
     return "palindrom";
 }
-console.log(reverseString('malam'));
+console.log(deteksiPalindrom('malam'));
+console.log(deteksiPalindrom('Malam'));
+console.log(deteksiPalindrom('siang'));
 
 
 

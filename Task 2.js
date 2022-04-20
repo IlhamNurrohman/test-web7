@@ -1,4 +1,4 @@
-function reverseString(str) {
+function reverseWords(str) {
     let newString = "";
     let kata = "";
     for (let i = 0; i <= str.length - 1; i++) {
@@ -12,4 +12,6 @@ function reverseString(str) {
     newString = kata + " " + newString;
     return newString;
 }
-console.log(reverseString('saya belajar javascript'));
+console.log(reverseWords('saya belajar javascript'));
+console.log(reverseWords('javascript belajar saya'));
+console.log(reverseWords('ilham nurrohman'));

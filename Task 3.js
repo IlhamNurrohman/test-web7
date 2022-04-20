@@ -6,16 +6,16 @@ function ArkFood(harga, voucher, jarak, pajak) {
     if (typeof voucher !== "string") {
         return "Data harus string !"
     }
-    if (typeof pajak !== "boolean") {
-        return "Data harus boolean !";
-    }
     if (typeof jarak !== "number") {
         return "Data harus number !"
+    }
+    if (typeof pajak !== "boolean") {
+        return "Data harus boolean !";
     }
 
 
     let diskon = '';
-    let delivery = '';
+    let delivery = 5000;
     let tax = '';
 
     if (harga >= 50000 && harga <= 100000 && voucher.toUpperCase() === 'ARKAFOOD5') {
@@ -31,10 +31,6 @@ function ArkFood(harga, voucher, jarak, pajak) {
             diskon = 30000;
         }
     }
-
-    if (jarak <= 2) {
-        delivery = 5000;
-    }
     if (jarak > 2) {
         delivery = 5000 + ((jarak - 2) * 3000);
     }
@@ -43,7 +39,7 @@ function ArkFood(harga, voucher, jarak, pajak) {
         tax = harga * 5 / 100;
     }
 
-    return console.log(`Harga = ${harga} \nPotongan = ${diskon} \nBiaya Antar = ${delivery} \nPajak = ${tax} \nSubtotal = ${harga - diskon + delivery + tax}`)
+    return `Harga = ${harga} \nPotongan = ${diskon} \nBiaya Antar = ${delivery} \nPajak = ${tax} \nSubtotal = ${harga - diskon + delivery + tax}`;
 }
 
-ArkFood(75000, 'ARKAFOOD5', 5, true);
+console.log(ArkFood(75000, 'ARKAFOOD5', 5, true));
