@@ -7,6 +7,6 @@ const divideAndSort = (angka) => {
     for (let i = 0; i <= arrNumber.length -1; i++){
         arrNumber2 += arrNumber[i].split("").sort().join("")
     }
-    return parseInt(arrNumber2)
+    return Number(arrNumber2)
 }
 console.log(divideAndSort(5956560159466056));

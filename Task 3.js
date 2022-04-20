@@ -46,4 +46,4 @@ function ArkFood(harga, voucher, jarak, pajak) {
     return console.log(`Harga = ${harga} \nPotongan = ${diskon} \nBiaya Antar = ${delivery} \nPajak = ${tax} \nSubtotal = ${harga - diskon + delivery + tax}`)
 }
 
-ArkFood(50000, '', 2, false);
+ArkFood(75000, 'ARKAFOOD5', 5, true);
