@@ -20,7 +20,7 @@ function reverseString(str) {
     }
     return "palindrom";
 }
-console.log(reverseString('siang'));
+console.log(reverseString('malam'));
 
 
 /*
