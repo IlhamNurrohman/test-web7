@@ -1,17 +1,22 @@
 function reverseWords(str) {
-    let newString = "";
+    if(typeof str !== "string"){
+        return "Data harus string";
+    }
+    
     let kata = "";
+    let hasil = "";
     for (let i = 0; i <= str.length - 1; i++) {
         if (str[i] !== " ") {
-            kata += str[i];
+            hasil += str[i];
         } else {
-            newString = kata + " " + newString;
-            kata = "";
+            kata = hasil + " " + kata;
+            hasil = "";
         }
     }
-    newString = kata + " " + newString;
-    return newString;
+    kata = hasil + " " + kata;
+    return kata;
 }
+console.log(reverseWords(2));
 console.log(reverseWords('saya belajar javascript'));
 console.log(reverseWords('javascript belajar saya'));
 console.log(reverseWords('ilham nurrohman'));
